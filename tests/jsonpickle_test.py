@@ -476,7 +476,7 @@ class JSONPickleTestCase(unittest.TestCase):
         unpickled = jsonpickle.decode(pickled)
         self.assertEqual(unpickled.keys(), unpickled.values())
 
-    def test_refs_in_objects(self):
+    def test_refs_in_lists(self):
         """Test that objects in lists are referenced correctly"""
         a = Thing('a')
         b = Thing('b')
